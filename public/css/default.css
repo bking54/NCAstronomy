@@ -1,0 +1,194 @@
+a:hover {
+    color: #a0a0ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 1px solid #ffca00;
+    background-color: #010130;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #151554;
+}
+
+form {
+    height: auto;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+html {
+    background-color: #a0a0ff;
+}
+
+header {
+    border: 3px solid #ffca00;
+    background-color: #010130;
+    padding: 10px;
+}
+
+label {
+    text-align: center;
+}
+
+footer {
+    width: 98.75%;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    border: 3px solid #ffca00;
+    background-color: #010130;
+}
+
+nav {
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav {
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.header-nav {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.bright-text {
+    color: #ffffff;
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+.logo {
+    width: 150px;
+    border: 1px solid #ffca00;
+}
+
+.line-break {
+    height: 3px;
+    background-color: #ffca00;
+    margin: 10px 0px 10px 0px;
+}
+
+.user-nav {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+}
+
+.pad-left {
+    padding-left: 30px;
+}
+
+.text-area {
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    min-height: 100%;
+}
+
+.big-margin {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.body-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.top-margin {
+    margin-top: 20px;
+}
+
+.event {
+    margin-left: 450px;
+    margin-right: 450px;
+    min-height: 200px;
+    border: 2px solid #a0a0ff;
+}
+
+.title-area {
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+    padding-left: 20px;
+}
+
+.info-area {
+    border-top: 1px solid #a0a0ff;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+
+.connection-image {
+    max-width: 100%;
+}
+
+.image-div {
+    background-color: #a0a0ff;
+}
+
+.connection-info {
+    border-left: 1px solid #a0a0ff;
+}
+
+.p-margin {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.description-area {
+    border-top: 1px solid #a0a0ff;
+    padding-left: 20px;
+}
+
+.info {
+    border-bottom: 1px solid #a0a0ff;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.new-connection-form {
+    border: 2px solid #a0a0ff;
+    margin: 20px 400px 20px 400px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.success {
+    background-color: #0ff00f;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.error {
+    background-color: #f00f0f;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#info-last {
+    border-bottom: none;
+    padding-bottom: none;
+}

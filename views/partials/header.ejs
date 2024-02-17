@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>NC Astronomy Club</title>
+        <link href="/css/default.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="main-header">
+                <a href='/'>
+                    <img alt='../../assets/logo.png' class='logo' src='/assets/logo.png'>
+                </a>
+                <div>
+                    <h1 class='center-text bright-text'>North Carolina Astronomy Club</h1>
+                </div>
+                <div></div>
+            </div>
+            <div class="user-nav bright-text">
+                <div></div>
+                <nav>
+                    <% if (!user) { %>
+                    <a class='header-nav' href='/users/index'>Login</a>
+                    |
+                    <a class='header-nav' href='/users/new'>Sign Up</a>
+                    <% } else { %>
+                    <a class='header-nav' href='/users/profile'>Profile</a>
+                    |
+                    <a class='header-nav' href='/connections/new'>Start a new connection</a>
+                    |
+                    <a class='header-nav' href='/users/logout'>Logout</a>
+                    <% } %>
+                </nav>
+            </div>
+            <div class='line-break'></div>
+            <div class='pad-left'>
+                <nav>
+                    <a class='header-nav' href='/connections'>Connections</a>
+                </nav>
+            </div>
+        </header>
+        <div>
+            <%if (errorMessages.length > 0) {
+                errorMessages.forEach((message) => {%>
+                    <h6 class="error"><%=message%></h6>
+                <%});
+            }%>
+            <%if (successMessages.length > 0) {
+                successMessages.forEach((message) => {%>
+                    <h6 class="success"><%=message%></h6>
+                <%});
+            }%>
+        </div>
+        <main>
+            <div>

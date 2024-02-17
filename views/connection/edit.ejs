@@ -1,0 +1,15 @@
+<%- include('../partials/header.ejs')%>
+<h2 class='center-text'>Edit connection</h2>
+<div class='text-area'>
+    <form class='new-connection-form' action="/connections/<%= con.id %>?_method=PUT" method="POST">
+        <label>Title</label>
+        <input type='text' name="name" value="<%= con.name %>" required minLength="8">
+        <label>Details</label>
+        <input type='text' name="details" value="<%= con.details %>" required minLength="10">
+        <label>Image URL</label>
+        <input type='url' name="imageURL" value="<%= con.imageURL %>" required>
+        <label>Submit</label>
+        <button type='submit'>Submit Changes</button>
+    </form>
+</div>
+<%- include('../partials/footer.ejs')%>

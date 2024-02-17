@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs')%>
+<h2 class='center-text'>Create a new connection</h2>
+<div class='text-area'>
+    <form class='new-connection-form' action="/connections" method="POST">
+        <label>Topic</label>
+        <input type='text' name="topic" required minLength="8">
+        <label>Title</label>
+        <input type='text' name="name" required minLength="3">
+        <label>Details</label>
+        <input type='text' name="details" required minLength="10">
+        <label>When</label>
+        <input type='date' name="date" required>
+        <label>Where</label>
+        <input type='text' name="location" required minLength="8">
+        <label>Start</label>
+        <input type='time' name="start" required>
+        <label>End</label>
+        <input type='time' name="end" required>
+        <label>Image URL</label>
+        <input type='url' name="imageURL" required>
+        <label>Submit</label>
+        <button type='submit'>Create new connection</button>
+    </form>
+</div>
+<%- include('../partials/footer.ejs')%>

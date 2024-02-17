@@ -1,0 +1,22 @@
+<%- include('../partials/header.ejs')%>
+        <div id="content">
+            <h2>Profile Page</h2>
+            <h4>Welcome, <%= user.firstName + ' ' + user.lastName%></h4>
+            <%if (connections.length > 0) {%>
+                <p>Your connections:</p>
+                <%connections.forEach(con => {%>
+                    <a href="/connections/<%=con._id%>"><%=con.name%></a>
+                <%})
+            } else {%>
+                <p>No owned connections</p>
+            <%}%>
+            <%if (rsvps.length > 0) {%>
+                <p>Your RSVPs:</p>
+                <%rsvps.forEach(rsvp => {%>
+                    <a href="/connections/<%=rsvp.connection._id%>"><%=rsvp.connection.name + ' (' + rsvp.connection.topic + ')' %></a>
+                <%})
+            } else {%>
+                <p>No RSVPs</p>
+            <%}%>
+        </div>
+<%- include('../partials/footer.ejs')%>
